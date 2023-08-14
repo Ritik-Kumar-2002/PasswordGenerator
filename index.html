@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div > 
+            <h1  > Password Generator </h1>
+        </div>
+
+        <span Copy-Content class="Copy-Content" >Copy Content</span>
+        <div class = 'display-container'>
+            <!-- <input readonly value="PASSWORD"> -->
+            <p password>PASSWORD</p>
+            <img src="./assets/Copy.png"  
+            alt="loading..." width="23px" height="23px" onclick="CopyContent()"/>
+            
+        </div>
+
+
+        <div class="wrapper" wrapper>
+            <div class="password-lengthbox">
+                <div>
+                    <span> Password length</span> 
+                    <p password-length>10</p>
+                    
+                </div>
+                <input class="Slider" type="range" id="points" min="0" max="20" onchange="SetPassWordLength(this.value)"/>
+                
+                
+            </div>
+            <div>
+                <input type="checkbox" id="UpperCase" checked = "on" onchange="selectCheckBox(this.value)" /> <label> Include UpperCase </label>
+            </div>
+            <div>
+                <input type="checkbox" id="LowerCase" onchange="selectCheckBox(this.value)"  /> <label> Include LowerCase </label>
+            </div>
+            <div>
+                <input type="checkbox" id="NumberCase" onchange="selectCheckBox(this.value)"  /> <label> Include Number </label>
+            </div>
+            <div>
+                <input type="checkbox" id="SpecialCase" onchange="selectCheckBox(this.value)"  /> <label> Include Symbol </label>
+            </div>
+            <div class="strength-container">
+                <span>Strength</span>
+                <div PasswordStength></div>
+            </div>
+
+            <!-- =============== || GENERATE PASSWORD || =============== -->
+            <div>
+                <button onclick="GeneratePassword()">Generate Password </button>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js" ></script>
+</body>
+</html>

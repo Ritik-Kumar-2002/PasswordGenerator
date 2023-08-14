@@ -1,0 +1,149 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 29%, rgba(8, 64, 140, 1) 53%, rgba(5, 96, 179, 1) 71%, rgba(23, 122, 191, 0.989233193277311) 87%, rgba(4, 139, 167, 1) 100%);
+    color: white;
+}
+
+.container {
+    border-radius: 10px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 30%;
+    /* background-color: rgb(17, 2, 71); */
+
+}
+
+h1 {
+    text-align: center;
+    position: relative;
+}
+
+.display-container {
+    border: 0px solid white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0rem 1rem;
+    justify-content: space-between;
+    color: yellow;
+    font-weight: bold;
+    background: rgb(3, 1, 43);
+
+
+}
+
+
+.display-container img {
+    cursor: pointer;
+}
+
+.password-lengthbox {
+    width: 100%;
+}
+
+.password-lengthbox div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.Slider {
+    appearance: none;
+    width: 100%;
+    background-color: whitesmoke;
+    height: 0.75rem;
+    border-radius: 10px;
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+.Slider::-webkit-slider-thumb {
+    appearance: none;
+    background-color: yellow;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.Slider::-webkit-slider-thumb:hover {
+    box-shadow: 2px 3px 10px rgb(110, 110, 44);
+    background-color: black;
+    border:2px solid yellow;
+}
+
+.wrapper {
+    padding: 0.5rem;
+    /* border: 2px solid white; */
+    margin-top: 1.5rem;
+    border-radius: 10px;
+    background: rgb(3, 1, 43);
+}
+.wrapper div{
+    margin-bottom: 1rem;
+}
+label{
+    font-variant: normal;
+}
+input{
+    cursor: pointer;
+
+}
+.strength-container{
+    font-size: 1.2rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.strength-container div{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: white;
+    float: right;
+}
+.wrapper button {
+    width: 100%;
+    background: rgb(3, 1, 43);
+    font-size: 1.2rem;
+    padding: 0.5rem 0rem;
+    /* background-color: rgb(236, 231, 241); */
+    background-color: rgb(225, 206, 246);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight:bolder;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.wrapper div {
+    margin-top: 0.5rem;
+}
+
+.Copy-Content {
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid white;
+    padding: 10px 5px;
+    left:80%;
+    border-radius: 5px;
+    width: 110px;
+    /* background-color: rgb(241, 234, 248); */
+    color:rgb(152, 247, 10);
+    text-align: center;
+    font-weight: bold;
+    display: none;
+}
